@@ -10,3 +10,4 @@ client.channels.get(channel);
 });
 });
   
+client.login("NDY5NjU5NjI3MDg5Mjk3NDEw.DjLNIg.z_SsdR0mvBMvKU7JrlP_-OtKLm0");
