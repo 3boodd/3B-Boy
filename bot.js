@@ -1,3 +1,11 @@
+const Discord = require("discord.js");
+const client = new Discord.Client();
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+
   let channel = ["469575636432846870"];
 client.on('voiceStateUpdate', (Codes, ReBeL) => {
 client.channels.get(channel);
