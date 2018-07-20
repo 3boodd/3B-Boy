@@ -18,4 +18,4 @@ client.channels.get(channel);
 });
 });
   
-client.login("NDY5NjU5NjI3MDg5Mjk3NDEw.DjLNIg.z_SsdR0mvBMvKU7JrlP_-OtKLm0");
+client.login("NDY5NjU5NzU4NDAwMzcyNzM2.DjLRIw.Q2eRf1walfw9KhRFGKW-X5UP0Z8");
