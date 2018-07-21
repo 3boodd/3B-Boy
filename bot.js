@@ -24,7 +24,7 @@ ReBeL.guild.members.get(ReBeL.id).setVoiceChannel(rebeeel.id).then((codess) =>{
 
 
 client.on('voiceStateUpdate', (Codes, ReBeL) => {
-    let channel3 = ["ايدي الروم"];
+    let channel3 = ["469575710558650388"];
 client.channels.get(channel3)
 ReBeL.guild.member(ReBeL).addRole(ReBeL.guild.roles.find("name", "بنت")).then(r => {
       });
