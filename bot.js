@@ -20,4 +20,4 @@ ReBeL.guild.members.get(ReBeL.id).setVoiceChannel(rebeeel.id).then((codess) =>{
 });
 });
   
-client.login("NDY5NjU5NzU4NDAwMzcyNzM2.DjLRIw.Q2eRf1walfw9KhRFGKW-X5UP0Z8");
+client.login(process.env.BOT_TOKEN);  //اياكككك تلعب هنا لا تحط توكنك هنا 
