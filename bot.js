@@ -15,7 +15,7 @@ channels[member.id].channel = undefined;
 }
 }
 if(oldmember.voiceChannel !== undefined || member.voiceChannel !== undefined) {
-if(member.voiceChannelID === 'آيدي شنل حق إنشاء الروم') {
+if(member.voiceChannelID === '470886880834093060') {
 member.guild.createChannel(member.displayName, "voice", [{
 id: member.id,
 allow: ['CONNECT'],
@@ -23,7 +23,7 @@ allow: ['CONNECT'],
 id: member.guild.id,
 deny: ['CONNECT']
 }]).then((channel)=> {
-    const parent = member.guild.channels.get('آيدي شنل حق إنشاء الروم').parentID
+    const parent = member.guild.channels.get('470886880834093060').parentID
     channel.setParent(parent);
     if(!channels[member.id]) channels[member.id] = {
         channel: channel.id,
@@ -65,7 +65,7 @@ if(user) {
 if(!message.guild.channels.get(channels[message.author.id].channel).permissionsFor(user.id).has(`CONNECT`)) return message.channel.send(`**The user already cannot connect to your voice channel**`);
 try {
 if(message.guild.members.get(user.id).voiceChannelID === channels[message.author.id].channel) {
-message.guild.members.get(user.id).setVoiceChannel('آيدي الشنل الي يروح له العضو بعد ما يصير له lock'); // المكان الي راح ينحطوله بعد ما يصير لهم lock
+message.guild.members.get(user.id).setVoiceChannel('470887662861942795'); // المكان الي راح ينحطوله بعد ما يصير لهم lock
 }  
 } catch (error) {
 console.log(error)
