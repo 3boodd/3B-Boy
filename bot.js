@@ -107,10 +107,10 @@ if(oldmember.voiceChannel !== undefined || member.voiceChannel !== undefined) {
 if(member.voiceChannelID === '470886880834093060') {
 member.guild.createChannel(member.displayName, "text", [{
 id: member.id,
-allow: ['CONNECT'],
+allow: ['READ_MESSAGES'],
 }, {
 id: member.guild.id,
-deny: ['CONNECT']
+deny: ['READ_MESSAGES']
 }]).then((channel)=> {
     const parent = member.guild.channels.get('470886880834093060').parentID
     channel.setParent(parent);
@@ -151,7 +151,7 @@ CONNECT: true
 if(message.content.startsWith("!lock")) {
 if(channels[message.author.id] !== undefined) {
 if(user) {
-if(!message.guild.channels.get(channels[message.author.id].channel).permissionsFor(user.id).has(`CONNECT`)) return message.channel.send(`**The user already cannot connect to your voice channel**`);
+if(!message.guild.channels.get(channels[message.author.id].channel).permissionsFor(user.id).has(`READ_MESSAGES`)) return message.channel.send(`**The user already cannot connect to your voice channel**`);
 try {
 if(message.guild.members.get(user.id).voiceChannelID === channels[message.author.id].channel) {
 message.guild.members.get(user.id).setVoiceChannel('470887662861942795'); // المكان الي راح ينحطوله بعد ما يصير لهم lock
@@ -160,7 +160,7 @@ message.guild.members.get(user.id).setVoiceChannel('470887662861942795'); // ا�
 console.log(error)
 }
 message.guild.channels.get(channels[message.author.id].channel).overwritePermissions(user.id, {
-CONNECT: false
+READ_MESSAGES: false
 }).then(message.channel.send(`:x: **${user.username}** cannot connect to your room now!`))
 }
 else if(args.includes("all")) {
